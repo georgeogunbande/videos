@@ -1,4 +1,4 @@
-import { Composition } from 'remotion';
+import { Composition, registerRoot } from 'remotion';
 import { MyVideo } from './MyVideo';
 
 export const RemotionRoot = () => (
@@ -11,3 +11,5 @@ export const RemotionRoot = () => (
     height={1080}
   />
 );
+
+registerRoot(RemotionRoot);
