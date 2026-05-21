@@ -1,0 +1,17 @@
+{
+  "name": "flatpurse-video",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Remotion Studio",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "cd flatpurse-video && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint"]
+    }
+  }
+}
